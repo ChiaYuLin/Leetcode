@@ -76,18 +76,6 @@ public:
 						return 0;
 				}
 				
-				/*if(result >= std::numeric_limits<int>::max() || result<= std::numeric_limits<int>::min())
-				{
-					
-					if(flag==0)
-						result=0-result;
-					if(result >= std::numeric_limits<int>::max())
-						return std::numeric_limits<int>::max();	
-					else if(result<= std::numeric_limits<int>::min())
-						return std::numeric_limits<int>::min(); 
-					else
-						return result;
-				}*/
 				cout<<"result:"<<result<<endl;
 								
 				j++;
