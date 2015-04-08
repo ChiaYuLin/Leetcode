@@ -29,9 +29,9 @@ public:
 			{
 			
 				v1=xtmp2/pow(10,i);   //EX: (1)808/100=>v1=8   (2)  08/10 =>v1=0
-				xtmp2=xtmp2-v1*pow(10,i);  
+				xtmp2=xtmp2-v1*pow(10,i); //EX: (1)808-800 => xtmp2=08 
 				v2=xtmp3%10;          //EX: (1)v2=8    (2)v2=0
-				xtmp3/=10;  
+				xtmp3/=10;           //EX:(1)808/10 => xtmp3=80
 
 				if(v1==v2)
 				{
