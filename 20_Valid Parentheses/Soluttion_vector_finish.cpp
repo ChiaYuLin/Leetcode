@@ -101,7 +101,7 @@ int main()
 	//result=solution.isValid("()[]{}");  //Expected true
 	//result=solution.isValid("[{()}]");  //Expected true
 	//result=solution.isValid("[({(())}[()])]");  //Expected true
-	result=solution.isValid("(}(({(}()(({)](({[");  //Expected true
+	result=solution.isValid("(}(({(}()(({)](({[");  //Expected false
 	
 	cout<<"result:"<<result<<endl;
 	return 0;

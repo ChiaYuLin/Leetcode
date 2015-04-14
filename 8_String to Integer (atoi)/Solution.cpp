@@ -32,7 +32,7 @@ public:
 				j++;
 				i--;
 			}
-			if(str[j]=='-')
+			if(str[j]=='-')  //Get sign symbol
 			{
 				flag=0;
 				j++;
@@ -57,7 +57,7 @@ public:
 					result=result+(str[j]-48)*pow(10,i);	
 				else if((str[j]=='-') || (str[j]=='+')) 
 				{
-					if(j==start)
+					if(j==start)    //More than one sign symbol  EX:+-2 ++1 return 0
 					{
 						if(flag>=0)
 							return 0;
@@ -67,7 +67,7 @@ public:
 				}
 				else
 				{
-					if(result!=0)
+					if(result!=0)   //-0012a42  return -12
 					{
 						notcomplete=true;
 						break;
@@ -82,7 +82,7 @@ public:
 			}
 			
 	
-			if(notcomplete)
+			if(notcomplete)   //EX: -12a42 => -12000=>-12000/1000=>-12
 				result=result/pow(10,length-j);
 			if(flag==0)
 				result=0-result;
@@ -131,6 +131,6 @@ int main()
 	//result=solution.atoi("-2147483647");         //Expected:-2147483647
 	//result=solution.atoi("2147483648");         //Expected:2147483647
 	result=solution.atoi("9223372036854775809");   //Expected:2147483647
-	    
+	//result=solution.atoi("-1231 14 e ");   //Expected:2147483647    
 	cout<<"result"<<result<<endl;
 }
