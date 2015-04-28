@@ -41,7 +41,7 @@ public:
 		    return hasPathSum(root->right, sum-root->val);
 		    
 		
-		//This will fail. The recursive will be end when enter the lase else if. 
+		//This will fail. The recursive will be end when enter the last else if. 
 		//Only return false. No recursive   
 		//The tree only execute one time 
 		else if(root->left!=NULL)
