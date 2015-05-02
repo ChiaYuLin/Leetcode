@@ -1,0 +1,23 @@
+[main] a 1000 (0) exception: trapped!
+[main] a 1000 (1) exception: code 0xC0000005 at 0x61053637
+[main] a 1000 (0) exception: ax 0x2C bx 0xA032148 cx 0x0 dx 0x2B
+[main] a 1000 (0) exception: si 0xA032148 di 0xA032148 bp 0x246FCE8 sp 0x246FCE0
+[main] a 1000 (0) exception: exception is: STATUS_ACCESS_VIOLATION
+[main] a 1000 (0) stack: Stack trace:
+[main] a 1000 (0) stack: frame 0: sp = 0x246F880, pc = 0x6100A2C3
+[main] a 1000 (0) stack: frame 1: sp = 0x246F8BC, pc = 0x7703B63D
+[main] a 1000 (0) stack: frame 2: sp = 0x246F8E0, pc = 0x7703B60F
+[main] a 1000 (0) stack: frame 3: sp = 0x246F990, pc = 0x76FF0133
+[main] a 1000 (0) stack: frame 4: sp = 0x246FCE8, pc = 0x4142DD
+[main] a 1000 (0) stack: frame 5: sp = 0x246FD08, pc = 0x4141B6
+[main] a 1000 (0) stack: frame 6: sp = 0x246FD2C, pc = 0x414D36
+[main] a 1000 (0) stack: frame 7: sp = 0x246FD60, pc = 0x414722
+[main] a 1000 (0) stack: frame 8: sp = 0x246FD80, pc = 0x4146BA
+[main] a 1000 (0) stack: frame 9: sp = 0x246FDA4, pc = 0x4154C0
+[main] a 1000 (0) stack: frame 10: sp = 0x246FDC4, pc = 0x4148DA
+[main] a 1000 (0) stack: frame 11: sp = 0x246FE54, pc = 0x414025
+[main] a 1000 (0) stack: frame 12: sp = 0x246FE84, pc = 0x401294
+[main] a 1000 (0) stack: frame 13: sp = 0x246FF0C, pc = 0x61004402
+[main] a 1000 (0) stack: frame 14: sp = 0x246FF50, pc = 0x61004420
+[main] a 1000 (0) stack: frame 15: sp = 0x246FF5C, pc = 0x4139DE
+[main] a 1000 (0) stack: End of stack trace (more stack frames may be present)
