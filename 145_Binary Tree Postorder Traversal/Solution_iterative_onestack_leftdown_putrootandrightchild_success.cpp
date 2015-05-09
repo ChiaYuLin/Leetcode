@@ -21,9 +21,9 @@ Reference:http://www.geeksforgeeks.org/iterative-postorder-traversal-using-stack
 
 Use one stack: treestack.
 
-Go left subtree all the way down.
+Go "left" subtree all the way down.
 
-During tracing, put parent and right child into stack.
+During tracing, put right child  and parent into stack. (Put right child first)
 
 Pop a node. If the right child of this node is smae with the top of stack. 
 That is, we will go to trace the right child of this node.
