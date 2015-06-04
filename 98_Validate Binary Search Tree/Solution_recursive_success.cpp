@@ -16,6 +16,10 @@ Both the left and right subtrees must also be binary search trees.
 using namespace std;
 
 /*
+This is Method1:Deliver the min and max to the recusive.
+
+There are three ways to sovle this problem:
+<Method1>
 Deliver the min and max to the recusive.
 The max of left subtree is root.
 The min of right subtree is root.
@@ -24,6 +28,15 @@ The min of right subtree is root.
 root=btree.insert(-2147483648);  //insert root
 btree.insert(2147483647,root);
 =>But I think my code will fail in this case??
+
+
+<Method2>
+Use FindMax and FindMin funtion to find the max and min of subtree.
+The max of left subtree should be smaller than root.
+The min of right subtree should be bigger than root.
+
+<Method3>Inorder Traversal
+InorderTraversal first and check whether the value in the inordertraversal vector is increasing.
 
 */
 
