@@ -28,6 +28,25 @@ The min of right subtree is root.
 root=btree.insert(-2147483648);  //insert root
 btree.insert(2147483647,root);
 =>But I think my code will fail in this case??
+It won't be wrong since I declare min=LONG_MIN and max=LONG_MAX
+int min2=INT_MIN;
+int max2=INT_MAX;
+long int min=LONG_MIN;
+long int max=LONG_MAX;
+long long int min3=LLONG_MIN;
+long long int max3=LLONG_MAX;
+
+cout<<"min:"<<min<<endl;   //min:-2147483648
+cout<<"max:"<<max<<endl;   //max:2147483647
+
+cout<<"min2:"<<min2<<endl;  //min:-9223372036854775808
+cout<<"max2:"<<max2<<endl;   //max:9223372036854775807
+
+cout<<"min3:"<<min3<<endl;  //min:-9223372036854775808
+cout<<"max3:"<<max3<<endl;  //max:9223372036854775807
+LLONG should be 2^128 but there is 128 bit in computer. 
+Thus, the value of LLONG is same with LONG.
+
 
 
 <Method2>
