@@ -57,9 +57,7 @@ public:
         		{
                     current=i+1-it_index->second;   //Recauculate the length of substring
                     
-                    windowstart++;
-                    while(windowstart<=it_index->second)  //The winodwstart points to the next char of duplicate char.
-                        windowstart++;    
+                    windowstart=it_index->second+1; 
         			
         			indextable[s[i]]=i+1;
         		}
